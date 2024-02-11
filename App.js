@@ -7,6 +7,7 @@ import Display from "./component/Display";
 import Update from "./component/Update";
 import Search from "./component/Search";
 import Home from "./component/Home";
+import Editreg from "./component/Editreg";
 
 
 
@@ -20,12 +21,14 @@ const App=()=>{
         <Route index element={<Home />} />
         <Route path="home" element={<Home/>} />
         <Route path="insert" element={<Insert />} />
-        <Route path="display" element={<Display />} />
+        <Route path="display" element={<Display/>} />
         <Route path="update" element={<Update />} />
         <Route path="search" element={<Search />} />
-        </Route>
+        <Route path="editreg/:myid" element={<Editreg />}
+/>        </Route>
     </Routes>
     </BrowserRouter>
+    
     </>
     );
 
